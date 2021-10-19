@@ -7,6 +7,18 @@ pub enum EscrowError {
     //Invalid Instruction
     #[error("Invalid Instruction")]
     InvalidInstruction,
+
+    //Not Rent Exempt
+    #[error("Not Rent Exempt")]
+    NotRentExempt,
+
+    //Expected Amount Mismatch
+    #[error("Expected Amount Mismatch")]
+    ExpectedAmountMismatch,
+
+    //Amount Overflow
+    #[error("Amount Overflow")]
+    AmountOverflow
 }
 
 // The reason we do this conversion in the first place is that the
